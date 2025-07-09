@@ -1,6 +1,7 @@
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
+#[derive(Clone, Copy)]
 pub struct Point {
     pub x: f64,
     pub y: f64,
@@ -30,7 +31,15 @@ pub fn calculate_b(point1: Point, point2: Point, point3: Point) -> f64 {
 
 #[wasm_bindgen]
 pub fn calculate_c(point1: Point, point2: Point, point3: Point) -> f64 {
-    todo!()
+    let x1: f64 = point1.x;
+    let x2: f64 = point2.x;
+    let x3: f64 = point3.x;
+    let y1: f64 = point1.y;
+    let y2: f64 = point2.y;
+    let y3: f64 = point3.y;
+    let a: f64 = calculate_a(point1, point2, point3);
+    let b: f64 = calculate_b(point1, point2, point3);
+    y1-(x1*x1)*a-x1*b
 }
 
 #[wasm_bindgen]
