@@ -3,6 +3,9 @@ name = "point2quadraticfunction"
 version = "0.1.0"
 authors = ["0x002500 <0x002500@0x0025.eu.org>"]
 edition = "2018"
+description = "A package in order to calculate the quadratic function based on 3 points on it"
+repository = "https://github.com/0x002500/point2quadraticfunction"
+license = "Apache-2.0"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
