@@ -39,6 +39,11 @@ pub fn calculate_c(point1: Point, point2: Point, point3: Point) -> f64 {
 }
 
 #[wasm_bindgen]
-pub fn point2quadraticfunction(point1: Point, point2: Point, point3: Point) -> String{
-    format!("f(x) = {} * x ^ 2 + {} * x + {}", calculate_a(point1, point2, point3), calculate_b(point1, point2, point3), calculate_c(point1, point2, point3))
+pub fn point2quadraticfunction(point1: Point, point2: Point, point3: Point) -> String {
+    format!(
+        "f(x) = {} * x ^ 2 + {} * x + {}",
+        calculate_a(point1, point2, point3),
+        calculate_b(point1, point2, point3),
+        calculate_c(point1, point2, point3)
+    )
 }
