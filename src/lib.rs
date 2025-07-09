@@ -29,4 +29,9 @@ pub fn calculate_b(point1: Point, point2: Point, point3: Point) -> f64 {
 }
 
 #[wasm_bindgen]
+pub fn calculate_c(point1: Point, point2: Point, point3: Point) -> f64 {
+    todo!()
+}
+
+#[wasm_bindgen]
 pub fn point2quadraticfunction(point1: Point, point2: Point, point3: Point) {}
