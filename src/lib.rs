@@ -7,7 +7,7 @@ pub struct Point {
 }
 
 #[wasm_bindgen]
-pub fn calculateA(point1: Point, point2: Point, point3: Point) -> f64 {
+pub fn calculate_a(point1: Point, point2: Point, point3: Point) -> f64 {
     let x1: f64 = point1.x;
     let x2: f64 = point2.x;
     let x3: f64 = point3.x;
