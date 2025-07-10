@@ -47,3 +47,8 @@ pub fn point2quadraticfunction(point1: Point, point2: Point, point3: Point) -> S
         calculate_c(point1, point2, point3)
     )
 }
+
+#[wasm_bindgen]
+pub fn x_axis_intersection(point1: Point, point2: Point, point3: Point) {
+todo!()
+}
